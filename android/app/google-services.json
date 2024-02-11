@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "450704756196",
+    "project_id": "ramadanapp-2457e",
+    "storage_bucket": "ramadanapp-2457e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450704756196:android:17f11426d5b5d4d580cbf1",
+        "android_client_info": {
+          "package_name": "com.example.firebase_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450704756196-hq4h06qk08fdbju7nndiffnfmn43vkdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlnNmA1eOTssQ9ZigvGYw59ln7ZJmrwXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450704756196-hq4h06qk08fdbju7nndiffnfmn43vkdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450704756196:android:2bb813201c6c36d780cbf1",
+        "android_client_info": {
+          "package_name": "com.yum.ramadanapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450704756196-fo5r79pp42e2j56dt8266k5ak3bvrh0m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yum.ramadanapp",
+            "certificate_hash": "b160c0436b8de0ee222782a463118d4666de6f81"
+          }
+        },
+        {
+          "client_id": "450704756196-hq4h06qk08fdbju7nndiffnfmn43vkdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlnNmA1eOTssQ9ZigvGYw59ln7ZJmrwXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450704756196-hq4h06qk08fdbju7nndiffnfmn43vkdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
