@@ -18,23 +18,37 @@ class _SignInAnonymouslyState extends State<SignInAnonymously> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: myappbar(title: 'Sign In Anonymously',),
+        backgroundColor: Color(0xffefe9f3),
+
+        appBar: myappbar(title: 'Sign In Anonymously',),
         body: Container(
-          padding: EdgeInsets.all(40.0),
+          padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
 
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              CircleAvatar(
+                radius: 50,
+                backgroundColor: Color(0xff8168c9),
+                child: CircleAvatar(
+                  radius: 46,
+                  backgroundColor: Color(0xff6c33b0),
+                  backgroundImage: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiS7TQkow0Jzhq7r1m65on58DKVkWq2rhJUREHPynvIp9UIMRLFCZuPXpu2rRmQs5s-Fs&usqp=CAU"),
+                ),
+              ),
+
+              SizedBox(height: 30,),
+
               TextField(
                 controller: controller_email,
                 decoration: InputDecoration(
                   hintText: "Email",
                   filled: true,
-                  fillColor: Colors.grey[200],
+                  fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
-                    borderSide: BorderSide.none,
+                    //borderSide: BorderSide.none,
                   ),
                   contentPadding:
                   EdgeInsets.symmetric(vertical: 15.0, horizontal: 20.0),
@@ -49,10 +63,10 @@ class _SignInAnonymouslyState extends State<SignInAnonymously> {
                 decoration: InputDecoration(
                   hintText: "Password",
                   filled: true,
-                  fillColor: Colors.grey[200],
+                  fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0), // Rounded border
-                    borderSide: BorderSide.none, // No border side
+                   // borderSide: BorderSide.none, // No border side
                   ),
                   contentPadding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 20.0), // Padding around the content
                   prefixIcon: Icon(Icons.lock),
@@ -84,6 +98,20 @@ class _SignInAnonymouslyState extends State<SignInAnonymously> {
                       print("Error creating user: $error");
                     });
                   },
+
+                  style: ElevatedButton.styleFrom(
+                    primary: Color(0xff664bb2), // Background color
+                    onPrimary: Colors.white, // Text color
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10), // Button padding
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8), // Button border radius
+                    ),
+                    textStyle: TextStyle(
+                      fontSize: 16, // Text size
+                      fontWeight: FontWeight.bold, // Text weight
+                    ),
+                    elevation: 5, // Button elevation (shadow)
+                  ),
 
                   child:
                   Text(" Login ")
