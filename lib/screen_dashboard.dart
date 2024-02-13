@@ -1,4 +1,3 @@
-
 import 'package:firebase_auth_methods/auth_screens/sign_in_phone.dart';
 import 'package:firebase_auth_methods/widgets/myAppBar.dart';
 import 'package:flutter/material.dart';
@@ -50,7 +49,7 @@ class _ScreenDashboardState extends State<ScreenDashboard> {
 
               ElevatedButton(
                   onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (builder)=> SignInWithGoogle()));
+                    Navigator.push(context, MaterialPageRoute(builder: (builder)=> SignInWithGooglenew()));
                   },
                   child: Text("Signin with Google Dashboard")),
 
